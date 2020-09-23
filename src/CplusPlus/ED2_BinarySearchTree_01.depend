@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1600765622 source:/home/jlrv/Documentos/CodeBlocks/ED2/ED2_BinarySearchTree_01/main.cpp
+	<iostream>
+	<string>
+	<BinarySearchTree.h>
+	<Queue.h>
+
+1600763099 source:/home/jlrv/Documentos/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/BinaryTreeNode.cpp
+	"BinaryTreeNode.h"
+	<BinaryTreeNode.h>
+
+1600763070 /home/jlrv/Documentos/CodeBlocks/ED2/ED2_BinarySearchTree_01/include/BinaryTreeNode.h
+
+1600761798 source:/home/jlrv/Documentos/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/Node.cpp
+	"Node.h"
+	<Node.h>
+
+1600761777 /home/jlrv/Documentos/CodeBlocks/ED2/ED2_BinarySearchTree_01/include/Node.h
+
+1600762464 source:/home/jlrv/Documentos/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/Queue.cpp
+	"Queue.h"
+	<Node.h>
+	<iostream>
+	<Queue.h>
+
+1600762432 /home/jlrv/Documentos/CodeBlocks/ED2/ED2_BinarySearchTree_01/include/Queue.h
+	<Node.h>
+
+1600765426 source:/home/jlrv/Documentos/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/BinarySearchTree.cpp
+	"BinarySearchTree.h"
+	<BinarySearchTree.h>
+
+1600764150 /home/jlrv/Documentos/CodeBlocks/ED2/ED2_BinarySearchTree_01/include/BinarySearchTree.h
+	<BinaryTreeNode.h>
+	<Queue.h>
+
