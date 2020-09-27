@@ -2,10 +2,10 @@
 #define BINARYSEARCHTREE_H
 
 #include <BinaryTreeNode.h>
-#include <Queue.h>
+#include <AbstractBinaryTree.h>
 
 template <class T>
-class BinarySearchTree
+class BinarySearchTree: public AbstractBinaryTree<T>
 {
     public:
         BinarySearchTree();
@@ -13,18 +13,8 @@ class BinarySearchTree
 
         void Insert(T p_info);
 
-        Queue<T>* TraversePreOrder();
-        Queue<T>* TraverseInOrder();
-        Queue<T>* TraversePostOrder();
-
-    protected:
-        bool IsEmpty(BinaryTreeNode<T>* p_node);
-        void PreOrder(BinaryTreeNode<T>* p_node, Queue<T>* p_result);
-        void InOrder(BinaryTreeNode<T>* p_node, Queue<T>* p_result);
-        void PostOrder(BinaryTreeNode<T>* p_node, Queue<T>* p_result);
-
     private:
-        BinaryTreeNode<T>* m_root;
+        bool Exists(T p_info);
 };
 
 #endif // BINARYSEARCHTREE_H

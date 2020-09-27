@@ -5,6 +5,7 @@
 		<Option title="ED2_BinarySearchTree_01" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
+		<Option virtualFolders="List/;BinarySearchTree/;UserInterface/" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/ED2_BinarySearchTree_01" prefix_auto="1" extension_auto="1" />
@@ -34,15 +35,61 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/BinarySearchTree.h" />
-		<Unit filename="include/BinaryTreeNode.h" />
-		<Unit filename="include/Node.h" />
-		<Unit filename="include/Queue.h" />
+		<Unit filename="include/AbstractBinaryTree.h">
+			<Option virtualFolder="BinarySearchTree/" />
+		</Unit>
+		<Unit filename="include/BinarySearchTree.h">
+			<Option virtualFolder="BinarySearchTree/" />
+		</Unit>
+		<Unit filename="include/BinaryTreeNode.h">
+			<Option virtualFolder="BinarySearchTree/" />
+		</Unit>
+		<Unit filename="include/List.h">
+			<Option virtualFolder="List/" />
+		</Unit>
+		<Unit filename="include/ListIterator.h">
+			<Option virtualFolder="List/" />
+		</Unit>
+		<Unit filename="include/Menu.h">
+			<Option virtualFolder="UserInterface/" />
+		</Unit>
+		<Unit filename="include/Node.h">
+			<Option virtualFolder="List/" />
+		</Unit>
+		<Unit filename="include/TreeManager.h">
+			<Option virtualFolder="UserInterface/" />
+		</Unit>
+		<Unit filename="include/UI.h">
+			<Option virtualFolder="UserInterface/" />
+		</Unit>
 		<Unit filename="main.cpp" />
-		<Unit filename="src/BinarySearchTree.cpp" />
-		<Unit filename="src/BinaryTreeNode.cpp" />
-		<Unit filename="src/Node.cpp" />
-		<Unit filename="src/Queue.cpp" />
+		<Unit filename="src/AbstractBinaryTree.cpp">
+			<Option virtualFolder="BinarySearchTree/" />
+		</Unit>
+		<Unit filename="src/BinarySearchTree.cpp">
+			<Option virtualFolder="BinarySearchTree/" />
+		</Unit>
+		<Unit filename="src/BinaryTreeNode.cpp">
+			<Option virtualFolder="BinarySearchTree/" />
+		</Unit>
+		<Unit filename="src/List.cpp">
+			<Option virtualFolder="List/" />
+		</Unit>
+		<Unit filename="src/ListIterator.cpp">
+			<Option virtualFolder="List/" />
+		</Unit>
+		<Unit filename="src/Menu.cpp">
+			<Option virtualFolder="UserInterface/" />
+		</Unit>
+		<Unit filename="src/Node.cpp">
+			<Option virtualFolder="List/" />
+		</Unit>
+		<Unit filename="src/TreeManager.cpp">
+			<Option virtualFolder="UserInterface/" />
+		</Unit>
+		<Unit filename="src/UI.cpp">
+			<Option virtualFolder="UserInterface/" />
+		</Unit>
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

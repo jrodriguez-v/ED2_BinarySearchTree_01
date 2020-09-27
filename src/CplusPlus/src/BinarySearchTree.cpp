@@ -1,30 +1,35 @@
 #include "BinarySearchTree.h"
+#include <AbstractBinaryTree.h>
+#include <BinaryTreeNode.h>
 
 using namespace std;
 
 template <class T>
-BinarySearchTree<T>::BinarySearchTree()
+BinarySearchTree<T>::BinarySearchTree(): AbstractBinaryTree<T>()
 {
-    m_root = nullptr;
 }
 
 template <class T>
 void BinarySearchTree<T>::Insert(T p_info)
 {
-    if(IsEmpty(m_root))
+    if(this->IsEmptyNode(this->m_root))
     {
-        m_root = new BinaryTreeNode<T>(p_info);
+        this->m_root = new BinaryTreeNode<T>(p_info);
+    }
+    else if(Exists(p_info))
+    {
+        return;
     }
     else
     {
-        BinaryTreeNode<T>* current = m_root;
+        BinaryTreeNode<T>* current = this->m_root;
 
-        while(!IsEmpty(current))
+        while(!this->IsEmptyNode(current))
         {
             //Si el valor ingresado es menor a la raíz, va por la izquierda
             if(p_info < current->GetInfo())
             {
-                if(IsEmpty(current->GetLeft()))
+                if(this->IsEmptyNode(current->GetLeft()))
                 {
                     BinaryTreeNode<T>* left = new BinaryTreeNode<T>(p_info);
                     current->SetLeft(left);
@@ -37,7 +42,7 @@ void BinarySearchTree<T>::Insert(T p_info)
             }
             else //Si el valor ingresado es mayor a la raíz, va por la derecha
             {
-                if(IsEmpty(current->GetRight()))
+                if(this->IsEmptyNode(current->GetRight()))
                 {
                     BinaryTreeNode<T>* right = new BinaryTreeNode<T>(p_info);
                     current->SetRight(right);
@@ -53,86 +58,15 @@ void BinarySearchTree<T>::Insert(T p_info)
 }
 
 template <class T>
-Queue<T>* BinarySearchTree<T>::TraversePreOrder()
+bool BinarySearchTree<T>::Exists(T p_info)
 {
-    Queue<T>* result = new Queue<T>();
-
-    PreOrder(m_root, result);
-
-    return result;
-}
-
-template <class T>
-Queue<T>* BinarySearchTree<T>::TraverseInOrder()
-{
-    Queue<T>* result = new Queue<T>();
-
-    InOrder(m_root, result);
-
-    return result;
-}
-
-template <class T>
-Queue<T>* BinarySearchTree<T>::TraversePostOrder()
-{
-    Queue<T>* result = new Queue<T>();
-
-    PostOrder(m_root, result);
-
-    return result;
-}
-
-template <class T>
-bool BinarySearchTree<T>::IsEmpty(BinaryTreeNode<T>* p_node)
-{
-    return p_node == nullptr;
-}
-
-template <class T>
-void BinarySearchTree<T>::PreOrder(BinaryTreeNode<T>* p_node, Queue<T>* p_result)
-{
-    //Root-Left-Right
-    if(IsEmpty(p_node))
-        return;
-
-    p_result->Enqueue(p_node->GetInfo());
-
-    PreOrder(p_node->GetLeft(), p_result);
-    PreOrder(p_node->GetRight(), p_result);
-}
-
-template <class T>
-void BinarySearchTree<T>::InOrder(BinaryTreeNode<T>* p_node, Queue<T>* p_result)
-{
-    //Left-Root-Right
-    if(IsEmpty(p_node))
-        return;
-
-    InOrder(p_node->GetLeft(), p_result);
-
-    p_result->Enqueue(p_node->GetInfo());
-
-    InOrder(p_node->GetRight(), p_result);
-}
-
-template <class T>
-void BinarySearchTree<T>::PostOrder(BinaryTreeNode<T>* p_node, Queue<T>* p_result)
-{
-    //Left-Right-Root
-    if(IsEmpty(p_node))
-        return;
-
-    PostOrder(p_node->GetLeft(), p_result);
-
-    PostOrder(p_node->GetRight(), p_result);
-
-    p_result->Enqueue(p_node->GetInfo());
+    auto found = this->Find(p_info);
+    return !this->IsEmptyNode(found);
 }
 
 template <class T>
 BinarySearchTree<T>::~BinarySearchTree()
 {
-    delete m_root;
 }
 
 #include <BinarySearchTree.h>

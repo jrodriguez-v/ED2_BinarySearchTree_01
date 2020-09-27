@@ -34,3 +34,100 @@
 	<BinaryTreeNode.h>
 	<Queue.h>
 
+1601184067 source:/home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/main.cpp
+	<iostream>
+	<UI.h>
+
+1601172359 /home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/include/BinarySearchTree.h
+	<BinaryTreeNode.h>
+	<AbstractBinaryTree.h>
+
+1600763070 /home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/include/BinaryTreeNode.h
+
+1600762432 /home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/include/Queue.h
+	<Node.h>
+
+1600761777 /home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/include/Node.h
+
+1601185119 source:/home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/src/BinarySearchTree.cpp
+	"BinarySearchTree.h"
+	<AbstractBinaryTree.h>
+	<BinaryTreeNode.h>
+	<BinarySearchTree.h>
+
+1600763099 source:/home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/src/BinaryTreeNode.cpp
+	"BinaryTreeNode.h"
+	<BinaryTreeNode.h>
+
+1600761798 source:/home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/src/Node.cpp
+	"Node.h"
+	<Node.h>
+
+1600762464 source:/home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/src/Queue.cpp
+	"Queue.h"
+	<Node.h>
+	<iostream>
+	<Queue.h>
+
+1601167564 source:/home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/src/ListIterator.cpp
+	"ListIterator.h"
+	<List.h>
+	<Node.h>
+	<ListIterator.h>
+
+1601167407 /home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/include/ListIterator.h
+	<List.h>
+	<Node.h>
+
+1601168154 /home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/include/List.h
+	<Node.h>
+
+1601167718 source:/home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/src/List.cpp
+	"List.h"
+	<Node.h>
+	<ListIterator.h>
+	<List.h>
+
+1601185262 source:/home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/src/TreeManager.cpp
+	"TreeManager.h"
+	<ListIterator.h>
+	<string>
+	<iostream>
+	<TreeManager.h>
+
+1601173959 /home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/include/TreeManager.h
+	<AbstractBinaryTree.h>
+	<List.h>
+	<string>
+
+1601185143 /home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/include/AbstractBinaryTree.h
+	<List.h>
+	<BinaryTreeNode.h>
+
+1601185282 source:/home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/src/AbstractBinaryTree.cpp
+	"AbstractBinaryTree.h"
+	<List.h>
+	<AbstractBinaryTree.h>
+
+1601184525 source:/home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/src/Menu.cpp
+	"Menu.h"
+	<List.h>
+	<ListIterator.h>
+	<regex>
+	<string>
+	<iostream>
+	<sstream>
+
+1601182240 /home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/include/Menu.h
+	<TreeManager.h>
+	<List.h>
+	<string>
+
+1601176299 source:/home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/src/UI.cpp
+	"UI.h"
+	<TreeManager.h>
+	<BinarySearchTree.h>
+
+1601176128 /home/jlrv/CodeBlocks/ED2/ED2_BinarySearchTree_01/src/CplusPlus/include/UI.h
+	<Menu.h>
+
