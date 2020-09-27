@@ -1,0 +1,6 @@
+C:\Users\mariosc\source\repos\ABB\ABB\bin\Debug\ABB.exe.config
+C:\Users\mariosc\source\repos\ABB\ABB\bin\Debug\ABB.exe
+C:\Users\mariosc\source\repos\ABB\ABB\bin\Debug\ABB.pdb
+C:\Users\mariosc\source\repos\ABB\ABB\obj\Debug\ABB.csproj.CoreCompileInputs.cache
+C:\Users\mariosc\source\repos\ABB\ABB\obj\Debug\ABB.exe
+C:\Users\mariosc\source\repos\ABB\ABB\obj\Debug\ABB.pdb
