@@ -15,43 +15,40 @@ void BinarySearchTree<T>::Insert(T p_info)
     if(this->IsEmptyNode(this->m_root))
     {
         this->m_root = new BinaryTreeNode<T>(p_info);
-    }
-    else if(Exists(p_info))
-    {
         return;
     }
-    else
-    {
-        BinaryTreeNode<T>* current = this->m_root;
 
-        while(!this->IsEmptyNode(current))
+    if(Exists(p_info)) return;
+
+    BinaryTreeNode<T>* current = this->m_root;
+
+    while(!this->IsEmptyNode(current))
+    {
+        //Si el valor ingresado es menor a la raíz, va por la izquierda
+        if(p_info < current->GetInfo())
         {
-            //Si el valor ingresado es menor a la raíz, va por la izquierda
-            if(p_info < current->GetInfo())
+            if(this->IsEmptyNode(current->GetLeft()))
             {
-                if(this->IsEmptyNode(current->GetLeft()))
-                {
-                    BinaryTreeNode<T>* left = new BinaryTreeNode<T>(p_info);
-                    current->SetLeft(left);
-                    current = nullptr;//detiene el ciclo
-                }
-                else
-                {
-                    current = current->GetLeft();
-                }
+                BinaryTreeNode<T>* left = new BinaryTreeNode<T>(p_info);
+                current->SetLeft(left);
+                current = nullptr;//detiene el ciclo
             }
-            else //Si el valor ingresado es mayor a la raíz, va por la derecha
+            else
             {
-                if(this->IsEmptyNode(current->GetRight()))
-                {
-                    BinaryTreeNode<T>* right = new BinaryTreeNode<T>(p_info);
-                    current->SetRight(right);
-                    current = nullptr;//detiene el ciclo
-                }
-                else
-                {
-                    current = current->GetRight();
-                }
+                current = current->GetLeft();
+            }
+        }
+        else //Si el valor ingresado es mayor a la raíz, va por la derecha
+        {
+            if(this->IsEmptyNode(current->GetRight()))
+            {
+                BinaryTreeNode<T>* right = new BinaryTreeNode<T>(p_info);
+                current->SetRight(right);
+                current = nullptr;//detiene el ciclo
+            }
+            else
+            {
+                current = current->GetRight();
             }
         }
     }
